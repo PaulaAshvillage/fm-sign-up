@@ -1,0 +1,95 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+/*
+   
+    4. Improve media defaults
+  */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+:root {
+  --color-black: #3d3b48;
+  --color-green: #38cc8b;
+  --color-blue: #5e54a4;
+  --color-coral: #ff7979;
+}
+
+body {
+  background-image: url("./images/bg-intro-mobile.png");
+  background-repeat: no-repeat;
+  background-color: var(--color-coral);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+
+  margin-inline: 24px;
+  line-height: 28px;
+}
+header {
+  text-align: center;
+  margin-top: 88px;
+  margin-bottom: 64px;
+}
+h1 {
+  margin-bottom: 36px;
+}
+#free-trial {
+  background-color: var(--color-blue);
+  box-shadow: 0px 8px 2px rgba(95, 94, 100, 0.3);
+
+  padding-block: 18px;
+  padding-inline: 66px;
+  border-radius: 10px;
+  text-align: center;
+  margin-block: 20px;
+}
+.form-registration {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  border-radius: 10px;
+  padding-inline: 20px;
+  padding-block: 20px;
+}
+input {
+  padding-block: 16px;
+  border: #dedede solid 2px;
+  border-radius: 7px;
+  padding-inline: 19px;
+  color: gray;
+}
+#btn-trial {
+  background-color: var(--color-green);
+  box-shadow: 0px 8px 2px rgba(56, 204, 139, 0.3);
+  border: none;
+  color: white;
+  margin-top: 10px;
+  padding-block: 18px;
+}
+#terms {
+  color: gray;
+  font-size: 11px;
+  text-align: center;
+  padding-inline: 19px;
+}
