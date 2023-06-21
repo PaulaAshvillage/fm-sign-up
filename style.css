@@ -19,6 +19,9 @@ html,
 body {
   height: 100%;
 }
+input:focus {
+  outline: 0;
+}
 /*
    
     4. Improve media defaults
@@ -53,10 +56,10 @@ header {
 h1 {
   margin-bottom: 36px;
 }
+
 #free-trial {
   background-color: var(--color-blue);
   box-shadow: 0px 8px 2px rgba(95, 94, 100, 0.3);
-
   padding-block: 18px;
   padding-inline: 66px;
   border-radius: 10px;
@@ -67,7 +70,7 @@ h1 {
   background-color: white;
   display: flex;
   flex-direction: column;
-  gap: 9px;
+
   border-radius: 10px;
   padding-inline: 20px;
   padding-block: 20px;
@@ -78,6 +81,9 @@ input {
   border-radius: 7px;
   padding-inline: 19px;
   color: gray;
+}
+input:active {
+  border: var(--color-blue) solid 2px;
 }
 #btn-trial {
   background-color: var(--color-green);
@@ -92,4 +98,11 @@ input {
   font-size: 11px;
   text-align: center;
   padding-inline: 19px;
+}
+.input-error {
+  color: var(--color-coral);
+  font-size: 11px;
+  font-style: italic;
+  text-align: right;
+  visibility: hidden;
 }

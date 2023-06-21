@@ -24,14 +24,19 @@
   <main>
     <p id="free-trial"><b>Try it free 7 days</b> then $20/mo. thereafter</p>
     <form action="" class="form-registration">
+
       <label for="first-name"></label>
-      <input type="text" name="first-name" id="first-name" placeholder="First Name">
+      <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
+      <p class="input-error" id="first-name-error">First Name cannot be empty</p>
       <label for="last-name"></label>
-      <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+      <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+      <p class="input-error" id="last-name-error">Last Name cannot be empty</p>
       <label for="email"></label>
-      <input type="email" name="email" id="email" placeholder="Email Address">
+      <input type="email" name="email" id="email" placeholder="Email Address" required>
+      <p class="input-error" id="email-error">Looks like this is not an email</p>
       <label for="password"></label>
-      <input type="password" name="password" id="password" placeholder="Password">
+      <input type="password" name="password" id="password" placeholder="Password" required>
+      <p class="input-error" id="password-error">Password cannot be empty</p>
       <input id="btn-trial" type="submit" value="CLAIM YOUR FREE TRIAL">
       <label id="terms" for="terms and services">By clicking the button, you are agreeing to our Terms and
         Services</label>
