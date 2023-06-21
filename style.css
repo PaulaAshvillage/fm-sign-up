@@ -106,3 +106,24 @@ input:active {
   text-align: right;
   visibility: hidden;
 }
+/*Icon*/
+input.touched:invalid {
+  background-image: url(/images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-size: 1.75em;
+  background-position: right 1em center;
+}
+/*Alle Input Felder die den Klassennamen tocuhed haben und invalid sind*/
+input.touched:invalid + .input-error {
+  visibility: visible;
+}
+/*https://github.com/prettier/prettier/issues/8409*/
+/* prettier-ignore */
+@supports (input:user-invalid) {
+  input:user-invalid + .input-error {
+    visibility: visible;
+  }
+  input:invalid + .input-error {
+    visibility: hidden;
+  }
+}
